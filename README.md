@@ -10,7 +10,7 @@ This project is a Recipe App that allows users to search, view details, and favo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/recipe-app.git
+   git clone https://github.com/romigh94/recipe-app.git
     ```
 
 ## Backend
