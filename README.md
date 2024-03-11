@@ -28,20 +28,14 @@ This project is a Recipe App that allows users to search, view details, and favo
 
 ### Getting Started
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/recipe-app.git
-    ```
-
-2. Install dependencies
+1. Install dependencies
 
 ```bash
 cd recipe-app/backend
 npm install
 ```
 
-3. Set up the database:
+2. Set up the database:
 
 Create a .env file in the backend directory.
 Add your database credentials:
@@ -50,7 +44,7 @@ Add your database credentials:
 DB_PASSWORD=Leoblomman14
 ```
 
-4. Run the server:
+3. Run the server:
    ```bash
    nodemon index
    ```
@@ -65,13 +59,12 @@ DB_PASSWORD=Leoblomman14
 
 ### Getting Started
 
- Install dependencies
+1. Install dependencies
 
 ```bash
 cd recipe-app
 npm install
 ```
-
 
 2. Run the application:
    ```bash
