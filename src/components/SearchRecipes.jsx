@@ -8,7 +8,7 @@ const SearchBar = ({ onSearch }) => {
   const handleSearch = async () => {
     try {
       const recipes = await apiService.searchRecipes(searchTerm);
-      onSearch(searchTerm);  // <-- Pass only the search term
+      onSearch(searchTerm);
     } catch (error) {
       console.error('Error searching for recipes:', error.message);
     }

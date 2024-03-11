@@ -1,5 +1,3 @@
-// components/RecipeDetails.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import apiService from '../services/apiService';
@@ -40,8 +38,12 @@ const RecipeDetails = () => {
       <p>Ingredients: {recipe.ingredients}</p>
       <p>Cooking Instructions: {recipe.instructions}</p>
       <img src={recipe.image_url} alt={recipe.name} />
+      <br></br>
       <button onClick={handleFavoriteClick}>Add to Favorites</button>
+      <br></br>
       <Link to="/favorites">Go to Favorites</Link>
+      <br></br>
+      <Link to="/">Go back</Link>
     </div>
   );
 };

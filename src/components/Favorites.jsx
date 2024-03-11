@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RecipeList from './RecipeList';
+//import RecipeList from './RecipeList';
 import apiService from '../services/apiService';
 
 const Favorites = () => {

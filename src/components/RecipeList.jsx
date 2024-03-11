@@ -28,9 +28,6 @@ const RecipeList = () => {
     handleSearch('');
   }, []);
 
-  const handleRecipeClick = (recipe) => {
-    setSelectedRecipe(recipe);
-  };
 
   const handleBackToSearch = () => {
     setSelectedRecipe(null);
