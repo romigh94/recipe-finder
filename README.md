@@ -62,7 +62,6 @@ DB_PASSWORD=Leoblomman14
 1. Install dependencies
 
 ```bash
-cd recipe-app
 npm install
 ```
 
