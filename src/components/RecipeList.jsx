@@ -37,24 +37,23 @@ const RecipeList = () => {
   };
 
   return (
-    <div className="container">
-      <div className="header">
-        <h1>Recipe App</h1>
-      </div>
+    <div>
       <SearchBar onSearch={handleSearch} />
       {loading && <div>Loading...</div>}
-      {error && <div className="error">Error: {error}</div>}
+      {error && <div>Error: {error}</div>}
       {selectedRecipe ? (
         <div>
-          <button className="back-button" onClick={handleBackToSearch}>Back to Search</button>
-          {selectedRecipe.id && <RecipeDetails recipe={selectedRecipe} id={selectedRecipe.id} />}
+          <button onClick={handleBackToSearch}>Back to Search</button>
+          <RecipeDetails recipe={selectedRecipe} />
         </div>
       ) : (
-        <ul className="recipe-list">
+        <ul>
           {Array.isArray(recipes) && recipes.length > 0 ? (
             recipes.map((recipe) => (
-              <li key={recipe.id} className="recipe-item" onClick={() => handleRecipeClick(recipe)}>
-                {recipe.name} - {recipe.ingredients}
+              <li key={recipe.id} >
+                <Link to={`/recipe/${recipe.id}`}>
+                  {recipe.name} - {recipe.ingredients}
+                </Link>
               </li>
             ))
           ) : (
